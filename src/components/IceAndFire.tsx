@@ -8,7 +8,7 @@ const AllCharsDiv = styled.div`
     background-color: bisque; 
 `; 
 
-const SingleCharDiv = styled.div`
+const SingleCharDiv = styled.div<{culture: string}> `
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -38,7 +38,7 @@ export default function IceAndFire(props: {data:Character[]}){
         <AllCharsDiv>
             {
                 props.data.map((char: Character) => 
-                    <SingleCharDiv key={char.id} culture={char.culture} >
+                    <SingleCharDiv key={char.id} culture={char.culture}>
                         <h1>{char.name}</h1>
                         <p>{char.gender}</p>
                         <p>{char.culture ? char.culture : "No Culture"}</p>
