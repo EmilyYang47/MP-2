@@ -5,7 +5,6 @@ const AllCharsDiv = styled.div`
     display: flex; 
     flex-flow: row wrap; 
     justify-content: space-evenly; 
-    background-color: bisque; 
 `; 
 
 const SingleCharDiv = styled.div<{culture: string}> `
@@ -20,15 +19,16 @@ const SingleCharDiv = styled.div<{culture: string}> `
                                                                             : (props.culture === "Ironborn" ? '#f3cad4ff' 
                                                                             : (props.culture === "Andal" ? '#7c1100ff' 
                                                                             : (props.culture === "Northmen" ? '#feea69ff' 
-                                                                            : 'black'))))))};
+                                                                            : 'bisque'))))))};
     color: ${(props) => (props.culture === "Westeros" ? 'black' : (props.culture === "Valyrian" ? '#0061A2' 
                                                                 : (props.culture === "Stormlands" ? '#fbe1f7ff' 
                                                                 : (props.culture === "Ironborn" ? '#84001fff' 
                                                                 : (props.culture === "Andal" ? '#f5e2dfff' 
                                                                 : (props.culture === "Northmen" ? '#b82508ff' 
-                                                                : 'white'))))))}; 
+                                                                : 'black'))))))}; 
     
-    border: 3px darkred solid;
+    border-radius: 5%; 
+    border: 2px solid #939393ff; 
     font: italic small-caps bold calc(2px + 1vw);
     text-align: center; 
 `

@@ -4,9 +4,15 @@ import { useEffect, useState } from 'react'
 import {Character} from "./interfaces/Characters.ts";
 
 const ParentDiv=styled.div`
-    width: 80vw;
+    width: 90vw;
     margin: auto;
-    border: 5px darkgoldenrod solid;
+    background-color: #f8f3ecff; 
+`;
+
+const StypedH1=styled.h1`
+    font-size: calc(2px + 3vw);
+    text-align: center; 
+    padding: 1%
 `;
 
 export default function App() {
@@ -48,9 +54,12 @@ export default function App() {
   }, [data.length]); 
 
   return (
-    <ParentDiv>
-      <IceAndFire data={data}/>
-    </ParentDiv>
+    <>
+      <ParentDiv>
+        <StypedH1>Ice And Fire Characters</StypedH1>
+        <IceAndFire data={data}/>
+      </ParentDiv>
+    </>
   )
 }
 
