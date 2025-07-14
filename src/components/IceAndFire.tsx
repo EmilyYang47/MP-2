@@ -27,7 +27,7 @@ const SingleCharDiv = styled.div<{culture: string}> `
                                                                 : (props.culture === "Northmen" ? '#b82508ff' 
                                                                 : 'black'))))))}; 
     
-    border-radius: 5%; 
+    border-radius: 15%; 
     border: 2px solid #939393ff; 
     font: italic small-caps bold calc(2px + 1vw);
     text-align: center; 
