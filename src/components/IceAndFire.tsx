@@ -29,7 +29,7 @@ const SingleCharDiv = styled.div`
                                                                 : 'white'))))))}; 
     
     border: 3px darkred solid;
-    font: italic small-caps bold calc(2px + 1vw) Papyrus, fantasy;
+    font: italic small-caps bold calc(2px + 1vw);
     text-align: center; 
 `
 
